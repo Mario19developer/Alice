@@ -21,7 +21,7 @@ public class BKConsolidacionAdapter extends RecyclerView.Adapter<BKConsolidacion
     int layout;
     Activity activity;
 
-    public BKBrotesAdapter(List<BKConsolidacion, lista, int layout, activity>){
+    public BKConsolidacionAdapter (List<BKConsolidacion> lista, int layout, Activity activity){
         this.lista = lista;
         this.layout = layout;
         this.activity = activity;
@@ -39,6 +39,7 @@ public class BKConsolidacionAdapter extends RecyclerView.Adapter<BKConsolidacion
     public void onBindViewHolder(@NonNull BKConsolidacionAdapter.BKConsolidacionHolder holder, int position) {
 
         BKConsolidacion bkConsolidacion = lista.get(position);
+        holder.txidbkpb.setText(bkConsolidacion.getA_Id());
     }
 
     @Override

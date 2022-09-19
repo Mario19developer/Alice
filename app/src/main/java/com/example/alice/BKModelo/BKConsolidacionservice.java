@@ -8,15 +8,15 @@ public class BKConsolidacionservice {
     public static List<BKConsolidacion> bkConsolidacion = new ArrayList<>();
 
     //se valida la insersion, la eliminacion y la actualizacion
-    public static void addbkalmacigos (BKConsolidacion bkconsolidacion){
+    public static void addbkConsolidacion (BKConsolidacion bkconsolidacion){
         bkConsolidacion.add(bkconsolidacion);
     }
 
-    public static void removebkalmacigos (BKConsolidacion bkconsolidacion){
+    public static void removebkConsolidacion (BKConsolidacion bkconsolidacion){
         bkConsolidacion.remove(bkconsolidacion);
     }
 
-    public static void updatebkalmacigos (BKConsolidacion bkconsolidacion){
+    public static void updatebkConsolidacion (BKConsolidacion bkconsolidacion){
         bkConsolidacion.set(bkConsolidacion.indexOf(bkconsolidacion),bkconsolidacion);
     }
 }

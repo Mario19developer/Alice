@@ -15,6 +15,7 @@ import com.example.alice.R;
 import java.util.List;
 
 public class BKBrotesAdapter extends RecyclerView.Adapter<BKBrotesAdapter.BKBrotesHolder>{
+
     //se agrega e
     List<BKBrotes> lista;
     int layout;
