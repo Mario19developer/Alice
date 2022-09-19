@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "70091628018",
+    "project_id": "greenraspb",
+    "storage_bucket": "greenraspb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:70091628018:android:7f385434e750f217a11f6b",
+        "android_client_info": {
+          "package_name": "com.example.alice"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "70091628018-n328fpsb93u760k7u4sj2circgfpieo8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDWyfV-ZGH_FKNKmfoyhpG6CeQyonXKkqQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "70091628018-n328fpsb93u760k7u4sj2circgfpieo8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

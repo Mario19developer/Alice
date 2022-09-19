@@ -1,0 +1,359 @@
+<resources>
+    <string name="app_name">A.l.i.c.e</string>
+
+    <string name="prompt_email">Correo Electronico</string>
+    <string name="prompt_password">Contraseña</string>
+    <string name="login">Login</string>
+    <string name="create_new">Click para registrar</string>
+    <string name="not_register">Ya estoy registrado</string>
+    <string name="name">Nombre Completo</string>
+    <string name="phone_number">Numero de Telefono</string>
+    <string name="register">Registrar</string>
+    <string name="name_error">Porfavor Ingresa tu numbre</string>
+    <string name="phone_error">Porfavor Ingresa tu numero de Telefono</string>
+    <string name="email_error">Porfavor Ingresa tu correo</string>
+    <string name="error_invalid_email">Este correo no es valido</string>
+    <string name="password_error">Porfavor Ingresa tu contraseña</string>
+    <string name="error_invalid_password">La contraseña debe tener mas de 6 carcteres</string>
+
+    --Area de plantación
+    <string-array name="Area">
+        <item>"Invernadero"</item>
+        <item>"Fundación"</item>
+        <item>"Investigación Aplicada"</item>
+        <item>"Breeding"</item>
+        <item>"Comercial"</item>
+        <item>""</item>
+    </string-array>
+
+    --Producto Plantado
+    <string-array name="Producto">
+        <item>""</item>
+        <item>"Root"</item>--cajas de raiz
+        <item>"RBM"</item>--macetas
+        <item>"TC´s"</item>
+        - planta de tc lab
+    </string-array>
+
+    --Producto Plantado
+    <string-array name="Lado">
+        <item>""</item>
+        <item>"Norte"</item>--cajas de raiz
+        <item>"Sur"</item>--macetas
+    </string-array>
+
+    --Calidad planta plantada en invernadero
+    <string-array name="Calidad">
+        <item>""</item>
+        <item>Dentro de criterio</item>
+        <item>Fuera de criterio</item>
+        <item>Merma</item>
+        <item>Material Contaminado</item>
+    </string-array>
+
+    --Numero de cosecha
+    <string-array name="ncos">
+        <item>""</item>
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+        <item>E</item>
+        <item>F</item>
+        <item>G</item>
+        <item>H</item>
+        <item>I</item>
+        <item>J</item>
+        <item>K</item>
+    </string-array>
+
+    --Numero de calidad
+    <string-array name="ncalidad">
+        <item>""</item>
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+        <item>E</item>
+    </string-array>
+
+    --Categoria del producto plantado
+    <string-array name="catpro">
+        <item>""</item>
+        <item>"ROOT"</item>
+        <item>"RBM"</item>
+        <item>"RBM - 2 rebanadas"</item>
+        <item>"RBM - Rebanadas Invertidas"</item>
+        <item>"RBM - Rebanadas Lineales"</item>
+        <item>"Raiz Peinada"</item>
+        <item>"Doble Raiz"</item>
+        <item>"Doble Raiz Peinada"</item>
+        <item>""</item>
+    </string-array>
+
+    --Caviades en charolas
+    <string-array name="Cavidades">
+        <item>""</item>
+        <item>"1"</item>
+        <item>"40"</item>
+        <item>"50"</item>
+        <item>"72"</item>
+        <item>"84"</item>
+        <item>"128"</item>
+        <item>"200"</item>
+        <item>"288"</item>
+    </string-array>
+
+    --Vulumen en charolas
+    <string-array name="VolumenCh">
+        <item>""</item>
+        <item>"11 cm³, Cuadrada"</item>
+        <item>"37 cm³, Flexible"</item>
+        <item>"39 cm³, Rigida"</item>
+        <item>"40 cm³, Cuadrada"</item>
+        <item>"52 cm³, Conica"</item>
+        <item>"55 cm³, Cuadrada"</item>
+        <item>"95 cm³, Conica"</item>
+        <item>"100 cm³, Cuadrada"</item>
+        <item>"1000 cm³, Cuadrada"</item>
+    </string-array>
+
+    --Cliente al que ira dirijido el producto
+    <string-array name="Cliente">
+        <item>""</item>
+        <item>"Invernadero"</item>
+        <item>"Productores"</item>
+        <item>"Fundación"</item>
+        <item>"Breeding"</item>
+        <item>"Comercial"</item>
+        <item>"Investigación Aplicada"</item>
+        <item>""</item>
+    </string-array>
+
+    --zona de plantación
+    <string-array name="zon">
+        <item>Libres</item>
+        <item>Tangancicuaro</item>
+        <item>CD. Guzman</item>
+    </string-array>
+
+    --puesto de trabajador
+    <string-array name="pues">
+        <item>Muestreador</item>
+        <item>Supervisor</item>
+        <item>Gerente</item>
+        <item>Administrador</item>
+        <item>""</item>
+
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    --Area de plantación
+    <string-array name="Areaz">
+        <item>"Invernadero"</item>
+        <item>"Fundación"</item>
+        <item>"Investigación Aplicada"</item>
+        <item>"Breeding"</item>
+        <item>"Comercial"</item>
+        <item>""</item>
+    </string-array>
+
+    <string-array name="Cultivo">
+        <item>""</item>
+        <item>Frambuesa</item>
+        <item>Zarzamora</item>
+        <item>Arandano</item>
+        <item>Fresa</item>
+    </string-array>
+
+    <string-array name="Dif">
+        <item>""</item>
+        <item>Cajas</item>
+        <item>Toopers</item>
+    </string-array>
+
+    --Calidad planta plantada en invernadero
+    <string-array name="Cal">
+        <item>""</item>
+        <item>1ra</item>
+        <item>Sin Especificar</item>
+        <item>Grueso</item>
+        <item>Delgado</item>
+        <item>Corto</item>
+        <item>Merma</item>
+    </string-array>
+
+    --Caviades en charolas se agrego la de 1 que seria 1/2 L supongo que se hace la multiplicacion
+    de 40 cv a 40 1/2 L
+    <string-array name="Cav">
+        <item>""</item>
+        <item>"1"</item>
+        <item>40</item>
+        <item>45</item>
+        <item>50</item>
+        <item>54</item>
+        <item>72</item>
+        <item>77</item>
+        <item>84</item>
+        <item>128</item>
+        <item>200</item>
+        <item>280</item>
+        <item>288</item>
+    </string-array>
+
+    --Calidad de planta en transpante
+    <string-array name="Cali">
+        <item>""</item>
+        <item>"A"</item>
+        <item>"B"</item>
+        <item>"C"</item>
+        <item>"D1"</item>
+        <item>"D2"</item>
+        <item>"D3"</item>
+        <item>"D4"</item>
+        <item>"E"</item>
+        <item>"F"</item>
+    </string-array>
+
+    --Calidad de planta en transpante
+    <string-array name="Calid">
+        <item>""</item>
+        <item>"1"</item>
+        <item>"2"</item>
+        <item>"3"</item>
+        <item>"Replante"</item>
+    </string-array>
+
+    --Clasificación grado
+    <string-array name="Clasgra">
+        <item>""</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4r</item>
+    </string-array>
+
+    --Zona de plantación
+    <string-array name="Zonaa">
+        <item>""</item>
+        <item>"Huamantla"</item>
+        <item>"Libres"</item>
+        <item>"El Seco"</item>
+        <item>"Ixcaquixtla"</item>
+        <item>""</item>
+    </string-array>
+
+    --Ranchos completos
+    <string-array name="Ranchop">
+        <item>""</item>
+        <item>El Balcón</item>//Huamantla
+        <item>Pozo Blanco</item>
+        <item>San Diego 1</item>
+        <item>San Diego 2</item>
+        <item>La Concepción</item>
+        <item>Coyahualulco</item>
+        <item>Xonecuila</item>
+        <item>Egipto</item>
+        <item>San Antonio Atenco</item>
+        <item>Santa Lugarda</item>//libres
+        <item>El Frontal</item>
+        <item>El Porvenir</item>
+        <item>Invernadero</item>
+        <item>Tuneles Infinitas</item>
+        <item>Agua Bendita</item>//El Seco
+        <item>Guadalupe Victoria</item>
+        <item>Morelos</item>
+    </string-array>
+
+    --Producto Plantado Zarza
+    <string-array name="proplaz">
+        <item>""</item>
+        <item>"Almacigo"</item>
+        <item>"TC´s"</item>
+    </string-array>
+
+    --Variedad de zarzamora
+    <string-array name="Varz">
+        <item>""</item>
+        <item>CATHERINE - BL449.1</item>
+        <item>DASSHA - BL405.2</item>
+        <item>ELVIRA - BR401.2</item>
+        <item>LAURITA - BS648.64</item>
+        <item>PAULINA - BS603.23</item>
+        <item>REBECA - BQ723.4</item>
+        <item>BT311.4</item>
+        <item>BT368.4</item>
+        <item>BT418.3</item>
+        <item>BV773.13</item>
+        <item>BW150.1</item>
+        <item>BZ1055.1</item>
+        <item>BZ821.1</item>
+    </string-array>
+
+    --categoria del producto
+    <string-array name="catp">
+        <item>""</item>
+        <item>RBM</item>
+        <item>TC´s</item>
+    </string-array>
+
+    --calidad del producto plantado en zarza
+    <string-array name="calp">
+        <item>""</item>
+        <item>Grande  - Grueso</item>
+        <item>Mediano</item>
+        <item>Chico - Delgado</item>
+        <item>Variado</item>
+    </string-array>
+
+    --zona de plantación
+    <string-array name="zonza">
+        <item>""</item>
+        <item>Tangancicuaro</item>
+        <item>CD. Guzman</item>
+    </string-array>
+
+    --ranchos de zarzamora
+    <string-array name="ranza">
+        <item>""</item>
+        <item>Granados</item>
+        <item>Maravillas</item>
+        <item>El Moral</item>
+        <item>""</item>
+    </string-array>
+
+    --Desdetino zarzamora
+    <string-array name="destino">
+        <item>""</item>
+        <item>Guzman</item>
+        <item>Jocotepec</item>
+        <item>Tangancicuaro</item>
+        <item>Cooler</item>
+        <item>""</item>
+    </string-array>
+
+    --puesto de trabajador
+    <string-array name="puestoza">
+        <item>""</item>
+        <item>Supervisor</item>
+        <item>Muestreador</item>
+        <item>Gerente</item>
+        <item>Administrador</item>
+        <item>""</item>
+    </string-array>
+
+    --puesto de trabajador
+    <string-array name="etapamor">
+        <item>""</item>
+        <item>Despues de Plantación Brotes</item>
+        <item>Despues de Trasplante</item>
+        <item>Mortandad Consolidación</item>
+        <item>Eliminación por exceso de stock</item>
+        <item>Eliminación por calidad</item>
+        <item>Eliminación de programa</item>
+        <item></item>
+    </string-array>
+
+</resources>

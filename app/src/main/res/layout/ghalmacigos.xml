@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@color/white"
+        android:orientation="horizontal"/>
+
+    <TextView
+        android:id="@+id/txidva"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:layout_weight="1"
+        android:text="-RFDassdkvbaA"
+        android:textAlignment="center"
+        android:textSize="11sp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@color/gra"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txusva"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:text="mario.castillo@driscolls.com"
+            android:textSize="11sp" />
+
+
+        <!-- fecha plantacion-->
+        <TextView
+            android:id="@+id/txfva"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:text="02/05/2022"
+            android:textAlignment="center"
+            android:textSize="11sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gra"
+        android:orientation="horizontal">
+
+        <!-- Rancho -->
+        <TextView
+            android:id="@+id/txranva"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:text="Rancho"
+            android:textAlignment="center"
+            android:textSize="11sp" />
+
+        <!-- variedad -->
+        <TextView
+            android:id="@+id/txvarva"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:text="Variedad"
+            android:textAlignment="center"
+            android:textSize="11sp" />
+
+        <!-- Clon-->
+        <TextView
+            android:id="@+id/txqtyva"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:text="QTY"
+            android:textAlignment="center"
+            android:textSize="11sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:layout_margin="5dp"
+            android:text="Sector" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:layout_margin="5dp"
+            android:text="Tunel" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:layout_margin="5dp"
+            android:text="Lado" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:layout_margin="5dp"
+            android:text="Cama" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gra"
+        android:orientation="horizontal">
+
+        <!-- Sector-->
+        <TextView
+            android:id="@+id/txsecva"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:text="Sector"
+            android:textAlignment="center"
+            android:textSize="11sp" />
+
+        <!-- Fila-->
+        <TextView
+            android:id="@+id/txtunelva"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:text="Tunel"
+            android:textAlignment="center"
+            android:textSize="11sp" />
+
+        <!-- Tabla-->
+        <TextView
+            android:id="@+id/txladova"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:text="Lado "
+            android:textAlignment="center"
+            android:textSize="11sp" />
+
+        <!-- Tabla-->
+        <TextView
+            android:id="@+id/txcamava"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:text="Cama "
+            android:textAlignment="center"
+            android:textSize="11sp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/rasp" />
+
+</LinearLayout>
