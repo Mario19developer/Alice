@@ -34,7 +34,6 @@ public class bkAlmacigosAgregar extends Fragment {
     AutoCompleteTextView auranchobkpa, auladobkpa, auvariedadbkpa, auprodplanbkpa, aucalplantbkpa;
     Button btncalcularbkpa, btnguardarbkpa;
 
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {

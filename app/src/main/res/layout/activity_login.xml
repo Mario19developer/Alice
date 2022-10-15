@@ -36,7 +36,8 @@
                     android:id="@+id/EmailError"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp">
+                    android:layout_marginTop="5dp"
+                    style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox.Dense">
 
                     <EditText
                         android:id="@+id/Email"
