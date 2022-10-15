@@ -13,13 +13,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Alice">
         <activity
-            android:name=".SInfo"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
             android:name=".BkMenuTrasplante"
             android:exported="false" />
         <activity
