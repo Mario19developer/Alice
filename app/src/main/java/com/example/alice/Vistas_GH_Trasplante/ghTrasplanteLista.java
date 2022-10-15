@@ -55,7 +55,7 @@ public class ghTrasplanteLista extends Fragment {
 
     private void cargardatosfbti() {
         final FirebaseDatabase database = FirebaseDatabase.getInstance();
-        DatabaseReference reference = database.getReference("Green House 2022").child("Trasplante p1");
+        DatabaseReference reference = database.getReference("Green House 2023").child("Trasplante");
 
         reference.addChildEventListener(new ChildEventListener() {
             @Override

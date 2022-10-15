@@ -150,23 +150,21 @@ public class MenuBlackberry extends AppCompatActivity {
             }
         });
 
-        //Empaque
         ibempmbk.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                Intent bkEmpaque = new Intent (MenuBlackberry.this, BkMenuEmpaque.class);
+                Intent bkEmpaque = new Intent(MenuBlackberry.this, BkMenuEmpaque.class);
 
                 usuz = txtusumbk.getText().toString();
                 zonz = txtzonmbk.getText().toString();
                 puez = txtpuesmbk.getText().toString();
 
-                bkEmpaque.putExtra("bk1",usuz);
-                bkEmpaque.putExtra("bk2",zonz);
-                bkEmpaque.putExtra("bk3",puez);
+                bkEmpaque.putExtra("bk1", usuz);
+                bkEmpaque.putExtra("bk2", zonz);
+                bkEmpaque.putExtra("bk3", puez);
 
                 startActivity(bkEmpaque);
-
             }
         });
 

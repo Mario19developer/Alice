@@ -495,6 +495,7 @@
                     android:layout_height="match_parent"
                     android:layout_margin="5dp"
                     android:layout_weight="1"
+                    app:cornerRadius="5dp"
                     android:drawableEnd="@drawable/ic_action_calc"
                     android:text="Calcular" />
 
@@ -570,6 +571,7 @@
                 android:layout_marginEnd="20dp"
                 android:layout_marginBottom="10dp"
                 android:layout_weight="1"
+                app:cornerRadius="5dp"
                 android:drawableEnd="@drawable/ic_action_save"
                 android:text="Guardar Plantación Brotes" />
 

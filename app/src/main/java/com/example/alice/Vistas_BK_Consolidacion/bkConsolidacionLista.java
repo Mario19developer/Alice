@@ -1,6 +1,5 @@
 package com.example.alice.Vistas_BK_Consolidacion;
 
-import android.annotation.SuppressLint;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -14,8 +13,6 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.alice.BKAdapter.BKConsolidacionAdapter;
-import com.example.alice.BKModelo.BKBrotes;
-import com.example.alice.BKModelo.BKBrotesservice;
 import com.example.alice.BKModelo.BKConsolidacion;
 import com.example.alice.BKModelo.BKConsolidacionservice;
 import com.example.alice.R;
@@ -29,30 +26,31 @@ import com.google.firebase.database.FirebaseDatabase;
 public class bkConsolidacionLista extends Fragment {
 
     //se agrega al layout
-    RecyclerView rcalv;
+    RecyclerView rcbkco;
 
     public bkConsolidacionLista() {
         // Required empty public constructor
     }
 
-    @SuppressLint("MissingInflatedId")
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_bk_consolidacion_lista, container, false);
 
         //Seteo de layout
-        rcalv = view.findViewById(R.id.rcalv);
+        rcbkco = view.findViewById(R.id.rcbkco);
 
+        //se genera el layout mostandrando un apartado el cual se replicara a todos los datos guardado
         LinearLayoutManager lmalv = new LinearLayoutManager(getActivity());
         lmalv.setOrientation(RecyclerView.VERTICAL);
         lmalv.setReverseLayout(true);
         lmalv.setStackFromEnd(true);
-        rcalv.setLayoutManager(lmalv);
+        rcbkco.setLayoutManager(lmalv);
 
         BKConsolidacionAdapter adapter = new BKConsolidacionAdapter(BKConsolidacionservice.bkConsolidacion, R.layout.bkconsolidacion, getActivity());
-        rcalv.setAdapter(adapter);
+        rcbkco.setAdapter(adapter);
 
         //se llama al metodo para traer datos de firebase
         cargardatosbkco();
@@ -63,8 +61,9 @@ public class bkConsolidacionLista extends Fragment {
     private void cargardatosbkco() {
         // se instancia la base de datos
         final FirebaseDatabase database = FirebaseDatabase.getInstance();
-        DatabaseReference reference = database.getReference("Blackberry_2023").child("Consolidacion");
+        DatabaseReference reference = database.getReference("Blackberry_2023").child("Consolidación");
 
+        //se valida que haya datos en algun evento, si se agrega, si se elimina, si cambia
         reference.addChildEventListener(new ChildEventListener() {
             @Override
             public void onChildAdded(@NonNull DataSnapshot snapshot, @Nullable String previousChildName) {
@@ -76,7 +75,7 @@ public class bkConsolidacionLista extends Fragment {
                     BKConsolidacionservice.addbkConsolidacion(bkConsolidacion);
                 }
 
-                rcalv.getAdapter().notifyDataSetChanged();
+                rcbkco.getAdapter().notifyDataSetChanged();
             }
 
             @Override
@@ -89,17 +88,12 @@ public class bkConsolidacionLista extends Fragment {
                     BKConsolidacionservice.updatebkConsolidacion(bkConsolidacion);
                 }
 
-                rcalv.getAdapter().notifyDataSetChanged();
+                rcbkco.getAdapter().notifyDataSetChanged();
 
             }
 
             @Override
             public void onChildRemoved(@NonNull DataSnapshot snapshot) {
-
-            }
-
-            @Override
-            public void onChildMoved(@NonNull DataSnapshot snapshot, @Nullable String previousChildName) {
 
                 BKConsolidacion bkConsolidacion = snapshot.getValue(BKConsolidacion.class);
                 bkConsolidacion.setA_Id(snapshot.getKey());
@@ -108,7 +102,11 @@ public class bkConsolidacionLista extends Fragment {
                     BKConsolidacionservice.removebkConsolidacion(bkConsolidacion);
                 }
 
-                rcalv.getAdapter().notifyDataSetChanged();
+                rcbkco.getAdapter().notifyDataSetChanged();
+            }
+
+            @Override
+            public void onChildMoved(@NonNull DataSnapshot snapshot, @Nullable String previousChildName) {
 
             }
 
@@ -117,6 +115,5 @@ public class bkConsolidacionLista extends Fragment {
 
             }
         });
-
     }
 }

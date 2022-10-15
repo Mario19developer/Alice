@@ -228,7 +228,7 @@ public class ghTrasplanteAgregar extends Fragment {
                 greenTrasplante.setX_Nota(ednotapit.getText().toString()); // x_Nota
 
                 FirebaseDatabase database = FirebaseDatabase.getInstance();
-                DatabaseReference reference = database.getReference("Green House 2022").child("Trasplante p1");
+                DatabaseReference reference = database.getReference("Green House 2023").child("Trasplante");
 
                 Toast.makeText(ghTrasplanteAgregar.this.getActivity(),"Datos Guardados Exitosamente", Toast.LENGTH_SHORT).show();
                 reference.push().setValue(greenTrasplante);

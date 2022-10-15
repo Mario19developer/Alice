@@ -30,14 +30,10 @@ public class bkBrotesAgregar extends Fragment {
     TextView txtusubkpb, txtfecharbkpb, txtsbkpb, txtzonbkpb, txtpuebkpb;
     EditText edfechpbkpb, edcambkpb, edposbkpb, edotvarbkpb, edclonbkpb, edtcharcombkpb,
             edtplachacombkpb, edtplansuelbkpb, edtotplanpbkpb, edloteorigenbkpb, ednotabkpb;
-
     TextInputLayout ti1bkpb, ti2bkpb, ti3bkpb, ti4bkpb, ti5bkpb, ti6bkpb, ti7bkpb, ti8bkpb, ti9bkpb,
             ti10bkpb, ti11bkpb, ti12bkpb, ti13bkpb, ti14bkpb, ti15bkpb, ti16bkpb;
-
     AutoCompleteTextView auranbkpb, auladbkpb, auvarbkpb, auproplabkpb, auncosechabkpb, aucavchabkpb;
-
     Button btncalclarbkpb, btnguadarbkpb;
-
     String aa1;
     boolean a1;
 
@@ -241,13 +237,6 @@ public class bkBrotesAgregar extends Fragment {
 
     }
 
-    private void limpiarbkpb(){
-        edtotplanpbkpb.setText("");
-        edtcharcombkpb.setText("");
-        edtplansuelbkpb.setText("");
-        edcambkpb.setText("");
-    }
-
     private void validacionesbkpb(){
         String v1 = edtotplanpbkpb.getText().toString();
         String v2 = edtcharcombkpb.getText().toString();
@@ -260,7 +249,13 @@ public class bkBrotesAgregar extends Fragment {
             edtplansuelbkpb.setError("Requerido");
             edcambkpb.setError("Requerido");
         }
+    }
 
+    private void limpiarbkpb(){
+        edtotplanpbkpb.setText("");
+        edtcharcombkpb.setText("");
+        edtplansuelbkpb.setText("");
+        edcambkpb.setText("");
     }
 
     private void calculartotaltrozosbkpa(){

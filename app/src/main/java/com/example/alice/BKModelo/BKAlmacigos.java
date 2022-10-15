@@ -284,5 +284,4 @@ public class BKAlmacigos {
                 V_Total_de_Trozos_Plantados, W_Total_Macetas_Plantadas, X_Nota_Plantacion,
                 Y_Codigo_Almacigos);
     }
-
 }

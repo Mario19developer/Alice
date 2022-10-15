@@ -308,7 +308,7 @@ public class ghBrotesAgregar extends Fragment {
                         greenBrotes.setZB_Nota(ednotapib.getText().toString());
 
                         FirebaseDatabase database = FirebaseDatabase.getInstance();
-                        DatabaseReference reference = database.getReference("Green House 2022").child("Plantación Brotes");
+                        DatabaseReference reference = database.getReference("Green House 2023").child("Plantación Brotes");
 
                         Toast.makeText(ghBrotesAgregar.this.getActivity(),"Datos Guardados Exitosamente", Toast.LENGTH_SHORT).show();
                         reference.push().setValue(greenBrotes);

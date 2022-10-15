@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Vistas_BK_Almacigo.bkAlmacigosLista"
-    android:orientation="vertical">
+    android:background="@drawable/b_bk_e"
+    android:orientation="vertical"
+    tools:context=".Vistas_BK_Almacigo.bkAlmacigosLista">
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -16,10 +16,10 @@
         android:text="Lista de Plantación Almacigos"
         android:textAlignment="center"
         android:textColor="@color/blackss"
-        android:textSize="20dp" />
+        android:textSize="20sp" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rcalv"
+        android:id="@+id/rcbkpa"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="8dp">

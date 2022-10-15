@@ -27,11 +27,6 @@ public class BKConsolidacion {
     private String T_; //
 
 
-
-
-
-
-
     public void bkconsolidacion(String a_Id, String b_Categoria, String c_Usuario,
                                 String d_Fecha_Registro, String e_Fecha_Consolidacion, String f_Zona,
                                 String g_Rancho, String h_Variedad_Seleccion, String i_Clon,

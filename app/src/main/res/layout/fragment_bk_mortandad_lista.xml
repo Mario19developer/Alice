@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Vistas_BK_Mortandad.bkMortandadLista"
-    android:orientation="vertical">
+    android:background="@drawable/b_bk_e"
+    android:orientation="vertical"
+    tools:context=".Vistas_BK_Mortandad.bkMortandadLista">
 
     <TextView
         android:layout_width="match_parent"
@@ -14,10 +16,10 @@
         android:text="Lista de Plantación Almacigos"
         android:textAlignment="center"
         android:textColor="@color/blackss"
-        android:textSize="20dp" />
+        android:textSize="20sp" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rcalv"
+        android:id="@+id/rcbkmo"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="8dp">

@@ -19,27 +19,24 @@ public class BKTrasplante {
     private String L_Clon; //
     private String M_Producto_Plantado; //
     private String N_Numero_de_Cosecha; //
-    private String O_Cavidad_Trasplantada; //
-    private String P_Cavidad_Transplantada; //
+    private String O_Cavidad_Brotes; //
+    private String P_Cavidad_Trasplantada; //
     private String Q_QTY_Charolas_Completas_Plantadas; //
     private String R_QTY_Planta_por_charola_Completa; //
     private String S_QTY_Planta_por_charola_Suelta; //
     private String T_Total_Planta_Plantada; //
-    private String U_Nota; //
-    private String V_; //
-
-
-
+    private String U_Codigo_Almacigo; //
+    private String V_Nota; //
 
 
     public void bktrasplante(String a_Id, String b_Categoria, String c_Usuario,
                              String d_Fecha_Registro, String e_Fecha_Trasplante, String f_Zona,
                              String g_Rancho, String h_Cama, String i_Posicion, String j_Lado,
                              String k_Variedad_Seleccion, String l_Clon, String m_Producto_Plantado,
-                             String n_Numero_de_Cosecha, String o_Cavidad_Trasplantada,
-                             String p_Cavidad_Transplantada, String q_QTY_Charolas_Completas_Plantadas,
+                             String n_Numero_de_Cosecha, String O_Cavidad_Brotes,
+                             String P_Cavidad_Trasplantada, String q_QTY_Charolas_Completas_Plantadas,
                              String r_QTY_Planta_por_charola_Completa, String s_QTY_Planta_por_charola_Suelta,
-                             String t_Total_Planta_Plantada, String u_Nota){
+                             String t_Total_Planta_Plantada, String U_Codigo_Almacigo, String V_Nota){
 
         this.A_Id = a_Id;
         this.B_Categoria = b_Categoria;
@@ -55,13 +52,14 @@ public class BKTrasplante {
         this.L_Clon = l_Clon;
         this.M_Producto_Plantado = m_Producto_Plantado;
         this.N_Numero_de_Cosecha = n_Numero_de_Cosecha;
-        this.O_Cavidad_Trasplantada = o_Cavidad_Trasplantada;
-        this.P_Cavidad_Transplantada = p_Cavidad_Transplantada;
+        this.O_Cavidad_Brotes = O_Cavidad_Brotes;
+        this.P_Cavidad_Trasplantada = P_Cavidad_Trasplantada;
         this.Q_QTY_Charolas_Completas_Plantadas = q_QTY_Charolas_Completas_Plantadas;
         this.R_QTY_Planta_por_charola_Completa = r_QTY_Planta_por_charola_Completa;
         this.S_QTY_Planta_por_charola_Suelta = s_QTY_Planta_por_charola_Suelta;
         this.T_Total_Planta_Plantada = t_Total_Planta_Plantada;
-        this.U_Nota = u_Nota;
+        this.U_Codigo_Almacigo = U_Codigo_Almacigo;
+        this.V_Nota = V_Nota;
 
     }
 
@@ -177,20 +175,20 @@ public class BKTrasplante {
         N_Numero_de_Cosecha = n_Numero_de_Cosecha;
     }
 
-    public String getO_Cavidad_Trasplantada() {
-        return O_Cavidad_Trasplantada;
+    public String getO_Cavidad_Brotes() {
+        return O_Cavidad_Brotes;
     }
 
-    public void setO_Cavidad_Trasplantada(String o_Cavidad_Trasplantada) {
-        O_Cavidad_Trasplantada = o_Cavidad_Trasplantada;
+    public void setO_Cavidad_Brotes(String o_Cavidad_Brotes) {
+        O_Cavidad_Brotes = o_Cavidad_Brotes;
     }
 
-    public String getP_Cavidad_Transplantada() {
-        return P_Cavidad_Transplantada;
+    public String getP_Cavidad_Trasplantada() {
+        return P_Cavidad_Trasplantada;
     }
 
-    public void setP_Cavidad_Transplantada(String p_Cavidad_Transplantada) {
-        P_Cavidad_Transplantada = p_Cavidad_Transplantada;
+    public void setP_Cavidad_Trasplantada(String p_Cavidad_Trasplantada) {
+        P_Cavidad_Trasplantada = p_Cavidad_Trasplantada;
     }
 
     public String getQ_QTY_Charolas_Completas_Plantadas() {
@@ -225,12 +223,20 @@ public class BKTrasplante {
         T_Total_Planta_Plantada = t_Total_Planta_Plantada;
     }
 
-    public String getU_Nota() {
-        return U_Nota;
+    public String getU_Codigo_Almacigo() {
+        return U_Codigo_Almacigo;
     }
 
-    public void setU_Nota(String u_Nota) {
-        U_Nota = u_Nota;
+    public void setU_Codigo_Almacigo(String u_Codigo_Almacigo) {
+        U_Codigo_Almacigo = u_Codigo_Almacigo;
+    }
+
+    public String getV_Nota() {
+        return V_Nota;
+    }
+
+    public void setV_Nota(String v_Nota) {
+        V_Nota = v_Nota;
     }
 
     @Override
@@ -243,8 +249,8 @@ public class BKTrasplante {
         return Objects.hash(A_Id, B_Categoria, C_Usuario, D_Fecha_Registro,
                 E_Fecha_Trasplante, F_Zona, G_Rancho, H_Cama, I_Posicion, J_Lado,
                 K_Variedad_Seleccion, L_Clon, M_Producto_Plantado, N_Numero_de_Cosecha,
-                O_Cavidad_Trasplantada, P_Cavidad_Transplantada,
+                O_Cavidad_Brotes, P_Cavidad_Trasplantada,
                 Q_QTY_Charolas_Completas_Plantadas, R_QTY_Planta_por_charola_Completa,
-                S_QTY_Planta_por_charola_Suelta, T_Total_Planta_Plantada, U_Nota, V_);
+                S_QTY_Planta_por_charola_Suelta, T_Total_Planta_Plantada, U_Codigo_Almacigo, V_Nota);
     }
 }

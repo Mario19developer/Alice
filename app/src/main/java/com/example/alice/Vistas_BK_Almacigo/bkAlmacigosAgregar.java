@@ -27,20 +27,13 @@ import java.util.Date;
 public class bkAlmacigosAgregar extends Fragment {
 
     TextView txtusubkpa, txtfechrebkpa, txtsbkpa, txtzonbkpa, txtpuebkpa;
-
     EditText edfechpbkpa, edcodplabkpa, edcamabkpa, edposibkpa, edanchocamabkpa, edlargocamabkpa, edotravarbkpa,
             edclonbkpa, edtipopruebbkpa, edlibtotplabkpa, edpromtroplabkpa, edttroplabkpa,edmacetastotalesbkpa, ednotabkpa;
-
     TextInputLayout ti1bkpa, ti2bkpa, ti3bkpa, ti4bkpa, ti5bkpa, ti6bkpa, ti7bkpa, ti8bkpa, ti9bkpa, ti10bkpa, ti11bkpa,
             ti12bkpa, ti13bkpa, ti14bkpa;
-
     AutoCompleteTextView auranchobkpa, auladobkpa, auvariedadbkpa, auprodplanbkpa, aucalplantbkpa;
-
     Button btncalcularbkpa, btnguardarbkpa;
 
-    String usu;
-
-    boolean u1;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -249,6 +242,7 @@ public class bkAlmacigosAgregar extends Fragment {
         });
 
         return view;
+
     }
 
     private void validacionesbkpa() {

@@ -42,11 +42,11 @@ public class BKBrotesAdapter extends RecyclerView.Adapter<BKBrotesAdapter.BKBrot
         //Se les pasa el parametro que se encuentra en firebase
         holder.txidbkpb.setText(bkBrotes.getA_Id()); //ID
         holder.txusbkpb.setText(bkBrotes.getC_Usuario()); //ID
+        holder.txfrbkpb.setText(bkBrotes.getD_Fecha_Registro());
         holder.txfbkpb.setText(bkBrotes.getE_Fecha_Plantacion()); //
         holder.txranbkpb.setText(bkBrotes.getG_Rancho_Plantacion()); //
         holder.txcamabkpb.setText(bkBrotes.getH_Cama_Origen()); //
         holder.txposisionbkpb.setText(bkBrotes.getI_Posicion_Origen()); //
-        holder.txladbkpb.setText(bkBrotes.getJ_Lado_Origen()); //
         holder.txvarbkpb.setText(bkBrotes.getK_Variedad_Seleccion()); //
         holder.txclonbkpb.setText(bkBrotes.getL_Clon()); //
         holder.txprodbkpb.setText(bkBrotes.getM_Producto_Plantado()); //
@@ -61,19 +61,19 @@ public class BKBrotesAdapter extends RecyclerView.Adapter<BKBrotesAdapter.BKBrot
     public class BKBrotesHolder extends RecyclerView.ViewHolder{
 
         //se agregan los elementos del layout a esta clase
-        TextView txidbkpb, txusbkpb, txfbkpb, txranbkpb, txcamabkpb, txposisionbkpb, txladbkpb,
-                txvarbkpb, txclonbkpb, txprodbkpb, txqtybkpb;
+        TextView txidbkpb, txusbkpb, txfrbkpb, txfbkpb, txranbkpb, txcamabkpb, txposisionbkpb, txvarbkpb,
+                txclonbkpb, txprodbkpb, txqtybkpb;
 
         public BKBrotesHolder(@NonNull View itemView) {
             super(itemView);
 
             txidbkpb = itemView.findViewById(R.id.txidbkpb);
             txusbkpb = itemView.findViewById(R.id.txusbkpb);
+            txfrbkpb = itemView.findViewById(R.id.txfrbkpb);
             txfbkpb = itemView.findViewById(R.id.txfbkpb);
             txranbkpb = itemView.findViewById(R.id.txranbkpb);
             txcamabkpb = itemView.findViewById(R.id.txcamabkpb);
             txposisionbkpb = itemView.findViewById(R.id.txposisionbkpb);
-            txladbkpb = itemView.findViewById(R.id.txladbkpb);
             txvarbkpb = itemView.findViewById(R.id.txvarbkpb);
             txclonbkpb = itemView.findViewById(R.id.txclonbkpb);
             txprodbkpb = itemView.findViewById(R.id.txprodbkpb);

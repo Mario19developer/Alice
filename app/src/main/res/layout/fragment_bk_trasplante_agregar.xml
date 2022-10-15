@@ -27,7 +27,7 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/cardView"
+        android:id="@+id/cd1tr"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
@@ -195,7 +195,7 @@
                     android:hint="Rancho Plantación">
 
                     <AutoCompleteTextView
-                        android:id="@+id/spranbktr"
+                        android:id="@+id/auranbktr"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -254,20 +254,20 @@
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <com.google.android.material.textfield.TextInputLayout
-                    android:id="@+id/ti5bktr"
-                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                    android:id="@+id/ti5bkpb"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_margin="3dp"
                     android:layout_weight="1"
                     android:hint="Lado">
 
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/edladbktr"
+                    <AutoCompleteTextView
+                        android:id="@+id/auladbktr"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:inputType="textPersonName|textCapCharacters"
-                        android:text=""
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:inputType="none"
                         android:textAlignment="center"
                         android:textSize="15sp"
                         android:textStyle="bold" />
@@ -291,7 +291,7 @@
                     android:hint="Variedad o Selección">
 
                     <AutoCompleteTextView
-                        android:id="@+id/spvarbktr"
+                        android:id="@+id/auvarbktr"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -366,7 +366,7 @@
                     android:hint="Producto Plantado">
 
                     <AutoCompleteTextView
-                        android:id="@+id/spproplabktr"
+                        android:id="@+id/auproplabktr"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -387,7 +387,7 @@
                     android:hint="Numero Cosecha">
 
                     <AutoCompleteTextView
-                        android:id="@+id/spncosbktr"
+                        android:id="@+id/auncosbktr"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -399,6 +399,8 @@
                 </com.google.android.material.textfield.TextInputLayout>
 
             </LinearLayout>
+
+
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -412,10 +414,10 @@
                     android:layout_height="match_parent"
                     android:layout_margin="3dp"
                     android:layout_weight="1"
-                    android:hint="Cavidad Charola Trasplante">
+                    android:hint="C-V Plant Brotes">
 
                     <AutoCompleteTextView
-                        android:id="@+id/spcavchapbktr"
+                        android:id="@+id/aucavchapbktr"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -432,10 +434,10 @@
                     android:layout_height="match_parent"
                     android:layout_margin="3dp"
                     android:layout_weight="1"
-                    android:hint="Cavidad Charola Trasplaleo">
+                    android:hint="C - V Trasplante">
 
                     <AutoCompleteTextView
-                        android:id="@+id/spcavchatbktr"
+                        android:id="@+id/aucavchatbktr"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -443,6 +445,7 @@
                         android:textAlignment="center"
                         android:textSize="15sp"
                         android:textStyle="bold" />
+
                 </com.google.android.material.textfield.TextInputLayout>
 
             </LinearLayout>
@@ -483,8 +486,9 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center"
-                        android:hint="Cantidad Planta por charola Completa"
-                        android:textStyle="bold" />
+                        android:hint="Total Planta por charola Completa"
+                        android:textStyle="bold"
+                        android:enabled="false"/>
 
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -508,7 +512,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center"
-                        android:hint="Cantidad Planta Suelta en charola"
+                        android:hint="Total Planta Suelta"
                         android:textStyle="bold" />
 
                 </com.google.android.material.textfield.TextInputLayout>
@@ -529,7 +533,8 @@
                         android:inputType="number"
                         android:textAlignment="center"
                         android:textSize="15sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:enabled="false"/>
                 </com.google.android.material.textfield.TextInputLayout>
 
             </LinearLayout>
@@ -542,7 +547,29 @@
                 android:layout_weight="1"
                 android:text="Calcular"
                 android:drawableEnd="@drawable/ic_action_calc"
-                app:iconSize="40dp" />
+                app:iconSize="40dp"
+                app:cornerRadius="5dp"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/ti18bktr"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:hint="Origen Almacigo semana + cama">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edorigenalmacigobktr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+            </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/ti17bktr"
@@ -571,8 +598,10 @@
                 android:layout_margin="5dp"
                 android:layout_weight="1"
                 android:text="Guardar Consolidación"
-                app:iconSize="40dp"/>
+                app:iconSize="40dp"
+                android:drawableEnd="@drawable/ic_action_save"/>
 
         </LinearLayout>
     </ScrollView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

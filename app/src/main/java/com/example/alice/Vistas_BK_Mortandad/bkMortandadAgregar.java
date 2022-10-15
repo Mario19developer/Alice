@@ -217,6 +217,7 @@ public class bkMortandadAgregar extends Fragment {
         });
 
         return view;
+
     }
 
     private void validacionesbkcm() {

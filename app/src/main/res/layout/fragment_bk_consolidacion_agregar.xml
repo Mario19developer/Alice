@@ -67,7 +67,6 @@
 
                     <TextView
                         android:layout_width="wrap_content"
-
                         android:layout_height="wrap_content"
                         android:layout_margin="5dp"
                         android:text="Fecha:"
@@ -170,20 +169,21 @@
 
                 <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/ti1bkco"
-                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
                     android:layout_margin="3dp"
-                    android:layout_weight="1">
+                    android:layout_weight="1"
+                    android:hint="Fecha Almacigos">
 
                     <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/edfechplabkco"
+                        android:id="@+id/edfechconbkco"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:textStyle="bold"
-                        android:hint="Fecha de Plantación"
-                        android:inputType="date" />
+                        android:inputType="date"
+                        android:textAlignment="center"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
 
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -312,18 +312,30 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:layout_marginTop="3dp"
+                    android:layout_gravity="center"
                     android:gravity="center"
                     android:textStyle="bold"
-                    android:text="Cavidad Charola \nPlantación" />
+                    android:text="Cavidad Charola Plantación" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:layout_marginTop="3dp"
+                    android:layout_gravity="center"
                     android:gravity="center"
                     android:textStyle="bold"
-                    android:text="Cavidad Charola \nTrasplante" />
+                    android:text="Cavidad Charola Trasplante" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginTop="3dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:text="Calidad de planta" />
 
             </LinearLayout>
 
@@ -376,25 +388,15 @@
 
                 </com.google.android.material.textfield.TextInputLayout>
 
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-
                 <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/ti7bkco"
                     style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_margin="3dp"
-                    android:layout_weight="1"
-                    android:inputType="none"
-                    android:textAlignment="center"
-                    android:textSize="15sp"
-                    android:textStyle="bold"
-                    android:hint="Calidad de planta">
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_marginEnd="3dp"
+                    android:layout_weight="1">
 
                     <AutoCompleteTextView
                         android:id="@+id/aucalidadbkco"
@@ -407,6 +409,33 @@
                         android:textStyle="bold"/>
 
                 </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:layout_margin="3dp"
+                    android:text="# de charolas completas plantadas" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:layout_margin="3dp"
+                    android:text="Total por charola completa" />
 
             </LinearLayout>
 
@@ -428,8 +457,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center"
-                        android:textStyle="bold"
-                        android:hint="# de Charolas Completas Plantadas" />
+                        android:textStyle="bold" />
 
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -447,13 +475,40 @@
                         android:layout_height="wrap_content"
                         android:gravity="center"
                         android:textStyle="bold"
-                        android:hint="Cantidad Planta por charola Completa" />
+                        android:enabled="false"/>
 
                 </com.google.android.material.textfield.TextInputLayout>
 
             </LinearLayout>
 
-        <LinearLayout
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:layout_margin="3dp"
+                    android:text="Total planta suelta en charola"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:layout_margin="3dp"
+                    android:text="Total planta consolidación"/>
+
+            </LinearLayout>
+
+            <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="horizontal">
@@ -472,7 +527,7 @@
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:textStyle="bold"
-                    android:hint="Total Planta Suelta en charola" />
+                    android:text="0"/>
 
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -490,7 +545,7 @@
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:textStyle="bold"
-                    android:hint="Total Planta Consolidación" />
+                    android:enabled="false"/>
 
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -527,7 +582,14 @@
                 android:id="@+id/btnguadarbkco"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Guardar Consolidación" />
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                app:cornerRadius="5dp"
+                android:drawableEnd="@drawable/ic_action_save"
+                android:text="Guardar Consolidación"/>
 
         </LinearLayout>
     </ScrollView>

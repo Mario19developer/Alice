@@ -8,15 +8,15 @@ public class BKEmpaqueservice {
     public static List<BKEmpaque> bkEmpaques = new ArrayList<>();
 
     //se valida la insersion, la eliminacion y la actualizacion
-    public static void addbkalmacigos (BKEmpaque bkempaque){
+    public static void addbkempaque (BKEmpaque bkempaque){
         bkEmpaques.add(bkempaque);
     }
 
-    public static void removebkalmacigos (BKEmpaque bkempaque){
+    public static void removebkempaque (BKEmpaque bkempaque){
         bkEmpaques.remove(bkempaque);
     }
 
-    public static void updatebkalmacigos (BKEmpaque bkempaque){
+    public static void updatebkempaque (BKEmpaque bkempaque){
         bkEmpaques.set(bkEmpaques.indexOf(bkempaque),bkempaque);
     }
 }

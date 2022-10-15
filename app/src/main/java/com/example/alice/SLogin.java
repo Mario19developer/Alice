@@ -114,7 +114,7 @@ public class SLogin extends AppCompatActivity {
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if (task.isSuccessful()){
                     startActivity(new Intent(SLogin.this, SMainActivity.class));
-                    Toast.makeText(SLogin.this, "Bienvenido" + emaill, Toast.LENGTH_SHORT).show();
+                    Toast.makeText(SLogin.this, "Bienvenido " + emaill, Toast.LENGTH_SHORT).show();
                     finish();
                 }
                 else {

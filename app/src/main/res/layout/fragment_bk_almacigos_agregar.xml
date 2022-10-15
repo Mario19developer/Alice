@@ -610,7 +610,7 @@
                     android:text="Calcular Trozos Totales"
                     android:textSize="10sp"
                     android:drawableEnd="@drawable/ic_action_calc"
-                    app:cornerRadius="20dp"/>
+                    app:cornerRadius="5dp"/>
 
                 <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/ti16bkpa"
@@ -670,9 +670,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                app:cornerRadius="5dp"
                 android:drawableEnd="@drawable/ic_action_save"
-                android:text="Guardar Plantación Almacigos"
-                app:cornerRadius="20dp"/>
+                android:text="Guardar Plantación Almacigos" />
 
         </LinearLayout>
     </ScrollView>

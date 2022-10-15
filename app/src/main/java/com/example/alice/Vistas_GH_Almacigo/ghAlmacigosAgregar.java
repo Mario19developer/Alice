@@ -264,7 +264,7 @@ public class ghAlmacigosAgregar extends Fragment {
                         //se instancia la base de datos
                         FirebaseDatabase database = FirebaseDatabase.getInstance();
                         //si lo anterior es correcto se mandan los datos a la base de datos
-                        DatabaseReference reference = database.getReference("Green House 2022").child("Plantación Almacigos");
+                        DatabaseReference reference = database.getReference("Green House 2023").child("Plantación Almacigos");
                         //se manda mensaje
                         Toast.makeText(ghAlmacigosAgregar.this.getActivity(),"Datos Guardados Exitosamente", Toast.LENGTH_SHORT).show();
                         //se mandan los valores a los getter an setter

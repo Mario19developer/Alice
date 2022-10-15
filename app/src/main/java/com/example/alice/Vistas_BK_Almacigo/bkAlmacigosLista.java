@@ -1,6 +1,5 @@
 package com.example.alice.Vistas_BK_Almacigo;
 
-import android.annotation.SuppressLint;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -14,8 +13,8 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.alice.BKModelo.BKAlmacigos;
-import com.example.alice.BKModelo.BKAlmacigosservice;
 import com.example.alice.BKAdapter.BKAlmacigosAdapter;
+import com.example.alice.BKModelo.BKAlmacigosservice;
 import com.example.alice.R;
 import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
@@ -23,10 +22,11 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
+
 public class bkAlmacigosLista extends Fragment {
 
     //se agrega al layout
-    RecyclerView rcalv;
+    RecyclerView rcbkpa;
 
     public bkAlmacigosLista() {
         // Required empty public constructor
@@ -35,21 +35,22 @@ public class bkAlmacigosLista extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_bk_almacigos_lista, container, false);
 
         //Seteo de layout
-        rcalv = view.findViewById(R.id.rcalv);
+        rcbkpa = view.findViewById(R.id.rcbkpa);
 
         //se genera el layout mostandrando un apartado el cual se replicara a todos los datos guardado
         LinearLayoutManager lmalv = new LinearLayoutManager(getActivity());
         lmalv.setOrientation(RecyclerView.VERTICAL);
         lmalv.setReverseLayout(true);
         lmalv.setStackFromEnd(true);
-        rcalv.setLayoutManager(lmalv);
+        rcbkpa.setLayoutManager(lmalv);
 
-        BKAlmacigosAdapter adapter = new BKAlmacigosAdapter(BKAlmacigosservice.bkAlmacigos,R.layout.bkalmacigos,getActivity());
-        rcalv.setAdapter(adapter);
+        BKAlmacigosAdapter adapter = new BKAlmacigosAdapter(BKAlmacigosservice.bkAlmacigos, R.layout.bkalmacigos, getActivity());
+        rcbkpa.setAdapter(adapter);
 
         //se llama al metodo para traer datos de firebase
         cargardatosbkpa();
@@ -58,14 +59,13 @@ public class bkAlmacigosLista extends Fragment {
         return view;
     }
 
-    private void cargardatosbkpa() {
+    private void cargardatosbkpa(){
         // se instancia la base de datos
         final FirebaseDatabase database = FirebaseDatabase.getInstance();
         DatabaseReference reference = database.getReference("Blackberry_2023").child("Plantacion Almacigos");
 
         //se valida que haya datos en algun evento, si se agrega, si se elimina, si cambia
         reference.addChildEventListener(new ChildEventListener() {
-            @SuppressLint("NotifyDataSetChanged")
             @Override
             public void onChildAdded(@NonNull DataSnapshot snapshot, @Nullable String previousChildName) {
 
@@ -76,7 +76,7 @@ public class bkAlmacigosLista extends Fragment {
                     BKAlmacigosservice.addbkalmacigos(bkAlmacigos);
                 }
 
-                rcalv.getAdapter().notifyDataSetChanged();
+                rcbkpa.getAdapter().notifyDataSetChanged();
             }
 
             @Override
@@ -89,7 +89,7 @@ public class bkAlmacigosLista extends Fragment {
                     BKAlmacigosservice.updatebkalmacigos(bkAlmacigos);
                 }
 
-                rcalv.getAdapter().notifyDataSetChanged();
+                rcbkpa.getAdapter().notifyDataSetChanged();
             }
 
             @Override
@@ -102,7 +102,7 @@ public class bkAlmacigosLista extends Fragment {
                     BKAlmacigosservice.removebkalmacigos(bkAlmacigos);
                 }
 
-                rcalv.getAdapter().notifyDataSetChanged();
+                rcbkpa.getAdapter().notifyDataSetChanged();
             }
 
             @Override

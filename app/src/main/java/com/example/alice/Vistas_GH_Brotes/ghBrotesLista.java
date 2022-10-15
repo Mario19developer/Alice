@@ -54,7 +54,7 @@ public class ghBrotesLista extends Fragment {
 
     private void cargardatosfbpbi() {
         final FirebaseDatabase database = FirebaseDatabase.getInstance();
-        DatabaseReference reference = database.getReference("Green House 2022").child("Plantación Brotes");
+        DatabaseReference reference = database.getReference("Green House 2023").child("Plantación Brotes");
         reference.addChildEventListener(new ChildEventListener() {
             @Override
             public void onChildAdded(@NonNull DataSnapshot snapshot, @Nullable String previousChildName) {

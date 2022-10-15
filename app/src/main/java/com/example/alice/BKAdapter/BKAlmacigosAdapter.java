@@ -40,12 +40,12 @@ public class BKAlmacigosAdapter extends RecyclerView.Adapter<BKAlmacigosAdapter.
         BKAlmacigos bkAlmacigos = lista.get(position);
         //Se les pasa el parametro que se encuentra en firebase
         holder.txidbkpa.setText(bkAlmacigos.getA_Id()); //ID
-        holder.txusbkpa.setText(bkAlmacigos.getC_Usuario()); //ID
+        holder.txusbkpa.setText(bkAlmacigos.getC_Usuario()); //
+        holder.txfrbkpa.setText(bkAlmacigos.getD_Fecha_Registro()); //
         holder.txfbkpa.setText(bkAlmacigos.getE_Fecha_Plantacion()); //
         holder.txranbkpa.setText(bkAlmacigos.getG_Rancho_Plantacion()); //
         holder.txcamabkpa.setText(bkAlmacigos.getJ_Cama()); //
         holder.txposisionbkpa.setText(bkAlmacigos.getK_Posicion()); //
-        holder.txladbkpa.setText(bkAlmacigos.getL_Lado()); //
         holder.txvarbkpa.setText(bkAlmacigos.getO_Variedad_Seleccion()); //
         holder.txclonbkpa.setText(bkAlmacigos.getP_Clon()); //
         holder.txprodbkpa.setText(bkAlmacigos.getR_Producto_Plantado()); //
@@ -59,19 +59,19 @@ public class BKAlmacigosAdapter extends RecyclerView.Adapter<BKAlmacigosAdapter.
 
     public class BKAlmacigosHolder extends RecyclerView.ViewHolder{
         //se agregan los elementos del layout a esta clase
-        TextView txidbkpa, txusbkpa, txfbkpa, txranbkpa, txcamabkpa, txposisionbkpa,
-                txladbkpa, txvarbkpa, txclonbkpa, txprodbkpa, txqtybkpa;
+        TextView txidbkpa, txusbkpa, txfrbkpa, txfbkpa, txranbkpa, txcamabkpa, txposisionbkpa,
+                txvarbkpa, txclonbkpa, txprodbkpa, txqtybkpa;
 
         public BKAlmacigosHolder(@NonNull View itemView) {
             super(itemView);
 
             txidbkpa = itemView.findViewById(R.id.txidbkpa);
             txusbkpa = itemView.findViewById(R.id.txusbkpa);
+            txfrbkpa = itemView.findViewById(R.id.txfrbkpa);
             txfbkpa = itemView.findViewById(R.id.txfbkpa);
             txranbkpa = itemView.findViewById(R.id.txranbkpa);
             txcamabkpa = itemView.findViewById(R.id.txcamabkpa);
             txposisionbkpa = itemView.findViewById(R.id.txposisionbkpa);
-            txladbkpa = itemView.findViewById(R.id.txladbkpa);
             txvarbkpa = itemView.findViewById(R.id.txvarbkpa);
             txclonbkpa = itemView.findViewById(R.id.txclonbkpa);
             txprodbkpa = itemView.findViewById(R.id.txprodbkpa);

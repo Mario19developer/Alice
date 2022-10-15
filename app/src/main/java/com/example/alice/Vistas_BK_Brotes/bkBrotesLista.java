@@ -29,7 +29,7 @@ import com.google.firebase.database.FirebaseDatabase;
 public class bkBrotesLista extends Fragment {
 
     //se agrega al layout
-    RecyclerView rcalv;
+    RecyclerView rcbkpb;
 
     public bkBrotesLista() {
         // Required empty public constructor
@@ -42,17 +42,17 @@ public class bkBrotesLista extends Fragment {
         View view = inflater.inflate(R.layout.fragment_bk_brotes_lista, container, false);
 
         //Seteo de layout
-        rcalv = view.findViewById(R.id.rcalv);
+        rcbkpb = view.findViewById(R.id.rcbkpb);
 
         //se genera el layout mostandrando un apartado el cual se replicara a todos los datos guardado
         LinearLayoutManager lmalv = new LinearLayoutManager(getActivity());
         lmalv.setOrientation(RecyclerView.VERTICAL);
         lmalv.setReverseLayout(true);
         lmalv.setStackFromEnd(true);
-        rcalv.setLayoutManager(lmalv);
+        rcbkpb.setLayoutManager(lmalv);
 
         BKBrotesAdapter adapter = new BKBrotesAdapter(BKBrotesservice.bkBrotes, R.layout.bkbrotes, getActivity());
-        rcalv.setAdapter(adapter);
+        rcbkpb.setAdapter(adapter);
 
         //se llama al metodo para traer datos de firebase
         cargardatosbkpb();
@@ -76,7 +76,7 @@ public class bkBrotesLista extends Fragment {
                     BKBrotesservice.addbkBrotes(bkBrotes);
                 }
 
-                rcalv.getAdapter().notifyDataSetChanged();
+                rcbkpb.getAdapter().notifyDataSetChanged();
 
             }
 
@@ -90,7 +90,7 @@ public class bkBrotesLista extends Fragment {
                     BKBrotesservice.updatebkBrotes(bkBrotes);
                 }
 
-                rcalv.getAdapter().notifyDataSetChanged();
+                rcbkpb.getAdapter().notifyDataSetChanged();
 
             }
 
@@ -104,7 +104,7 @@ public class bkBrotesLista extends Fragment {
                     BKBrotesservice.removebkBrotes(bkBrotes);
                 }
 
-                rcalv.getAdapter().notifyDataSetChanged();
+                rcbkpb.getAdapter().notifyDataSetChanged();
 
             }
 

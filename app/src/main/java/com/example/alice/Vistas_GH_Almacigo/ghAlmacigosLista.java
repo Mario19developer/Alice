@@ -61,7 +61,7 @@ public class ghAlmacigosLista extends Fragment {
     private void cargardatosfb() {
         // se instancia la base de datos
         final FirebaseDatabase database = FirebaseDatabase.getInstance();
-        DatabaseReference reference = database.getReference("Green House 2022").child("Plantación Almacigos");
+        DatabaseReference reference = database.getReference("Green House 2023").child("Plantación Almacigos");
 
         //se valida que haya datos en algun evento, si se agrega, si se elimina, si cambia
         reference.addChildEventListener(new ChildEventListener() {

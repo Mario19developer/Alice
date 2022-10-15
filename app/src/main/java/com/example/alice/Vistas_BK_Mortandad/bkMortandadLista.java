@@ -12,8 +12,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.example.alice.BKAdapter.BKMortandadAdapter;
 import com.example.alice.BKModelo.BKMortandad;
+import com.example.alice.BKAdapter.BKMortandadAdapter;
 import com.example.alice.BKModelo.BKMortandadservice;
 import com.example.alice.R;
 import com.google.firebase.database.ChildEventListener;
@@ -25,7 +25,7 @@ import com.google.firebase.database.FirebaseDatabase;
 public class bkMortandadLista extends Fragment {
 
     //se agrega al layout
-    RecyclerView rcalv;
+    RecyclerView rcbkmo;
 
     public bkMortandadLista() {
         // Required empty public constructor
@@ -38,17 +38,17 @@ public class bkMortandadLista extends Fragment {
         View view =  inflater.inflate(R.layout.fragment_bk_mortandad_lista, container, false);
 
         //Seteo de layout
-        rcalv = view.findViewById(R.id.rcalv);
+        rcbkmo = view.findViewById(R.id.rcbkmo);
 
         //se genera el layout mostandrando un apartado el cual se replicara a todos los datos guardado
         LinearLayoutManager lmalv = new LinearLayoutManager(getActivity());
         lmalv.setOrientation(RecyclerView.VERTICAL);
         lmalv.setReverseLayout(true);
         lmalv.setStackFromEnd(true);
-        rcalv.setLayoutManager(lmalv);
+        rcbkmo.setLayoutManager(lmalv);
 
         BKMortandadAdapter adapter = new BKMortandadAdapter(BKMortandadservice.bkMortandads,R.layout.bkmortandad,getActivity());
-        rcalv.setAdapter(adapter);
+        rcbkmo.setAdapter(adapter);
 
         //se llama al metodo para traer datos de firebase
         cargardatosbkcm();
@@ -72,7 +72,7 @@ public class bkMortandadLista extends Fragment {
                     BKMortandadservice.addbkMortandad(bkMortandad);
                 }
 
-                rcalv.getAdapter().notifyDataSetChanged();
+                rcbkmo.getAdapter().notifyDataSetChanged();
             }
 
             @Override
@@ -85,7 +85,7 @@ public class bkMortandadLista extends Fragment {
                     BKMortandadservice.updatebkMortandad(bkMortandad);
                 }
 
-                rcalv.getAdapter().notifyDataSetChanged();
+                rcbkmo.getAdapter().notifyDataSetChanged();
             }
 
             @Override
@@ -98,7 +98,7 @@ public class bkMortandadLista extends Fragment {
                     BKMortandadservice.removebkMortandad(bkMortandad);
                 }
 
-                rcalv.getAdapter().notifyDataSetChanged();
+                rcbkmo.getAdapter().notifyDataSetChanged();
             }
 
             @Override

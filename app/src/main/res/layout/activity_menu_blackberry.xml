@@ -316,14 +316,14 @@
                         app:srcCompat="@drawable/z_i_consolidacion" />
 
                     <ImageButton
-                        android:id="@+id/ibdeletembk"
+                        android:id="@+id/ibempmbk"
                         android:layout_width="130dp"
                         android:layout_height="130dp"
                         android:layout_margin="10dp"
                         android:layout_weight="1"
                         android:backgroundTint="@color/white"
                         android:scaleType="centerInside"
-                        app:srcCompat="@drawable/z_i_eliminacion" />
+                        app:srcCompat="@drawable/z_i_empaque" />
 
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
@@ -352,7 +352,7 @@
                     android:layout_margin="5dp"
                     android:layout_weight="1"
                     android:fontFamily="sans-serif-light"
-                    android:text="Eliminacion de almacigos"
+                    android:text="Empaque Zarzamora"
                     android:textAlignment="center"
                     android:textSize="15sp"
                     android:textStyle="bold" />
@@ -386,14 +386,14 @@
                         app:srcCompat="@drawable/z_i_trasplante" />
 
                     <ImageButton
-                        android:id="@+id/ibempmbk"
+                        android:id="@+id/ibdeletembk"
                         android:layout_width="130dp"
                         android:layout_height="130dp"
                         android:layout_margin="10dp"
                         android:layout_weight="1"
                         android:backgroundTint="@color/white"
                         android:scaleType="centerInside"
-                        app:srcCompat="@drawable/z_i_empaque" />
+                        app:srcCompat="@drawable/z_i_eliminacion" />
 
                 </LinearLayout>
 
@@ -423,7 +423,7 @@
                     android:layout_margin="5dp"
                     android:layout_weight="1"
                     android:fontFamily="sans-serif-light"
-                    android:text="Empaque Zarzamora"
+                    android:text="Eliminacion de almacigos"
                     android:textAlignment="center"
                     android:textSize="15sp"
                     android:textStyle="bold" />
